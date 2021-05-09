@@ -1,0 +1,16 @@
+{
+  "name": "soundclouddownloader",
+  "version": "1.0.0",
+  "description": "A soundcloud downloader which includes song metadata",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fredrikj31",
+  "license": "ISC",
+  "dependencies": {
+    "node-id3": "^0.2.3",
+    "request": "^2.88.2",
+    "soundcloud-scraper": "^4.0.3"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Soundcloud Downloader</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="./includes/css/style.css">
+</head>
+
+<body>
+
+	<p class="mt-5 text-center header"><b>Soundcloud Downloader</b></p>
+
+	<div class="container">
+		<div id="feedback"></div>
+	</div>
+
+	<!--? Track Input -->
+	<div class="row">
+		<div class="container text-center col-6">
+			<input type="text" class="form-control text-center" id="songURL"
+				placeholder="https://soundcloud.com/AwesomeArtist/AwesomeSong" value="https://soundcloud.com/wedamnzmashupsedits/sungoesdownmeuwedamnzvip">
+			<button type="button" class="btn downloadButton mt-3" id="convertButton">Convert Track</button>
+		</div>
+	</div>
+
+	<!--? Loading Action -->
+	<div class="spinner-border loading mt-5" id="loadingSection" style="display: none;"></div>
+
+	<!--? Download Track and Info -->
+	<div class="mt-5 text-center" id="downloadSection" style="display: none;">
+		<img class="rounded" id="songImage" src=""
+			alt="Cover image off song" height="300" width="300">
+		<div class="mt-3">
+			<p class="songArtist" id="songArtist"></p>
+			<p class="songTitle" id="songTitle"></p>
+		</div>
+		<a href="#" class="btn downloadButton" id="downloadButton">Download Track</a>
+	</div>
+
+	<div class="footer mt-5">
+		<div class="container">
+			<span style="color: #FFE9E1;">Made by developers for musicians 🎵</span>
+			<br>
+			<a style="color: #FFE9E1;" href="https://github.io" target="_blank">Open Source</a>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Custom Script -->
+	<script src="./includes/js/script.js"></script>
+</body>
+
+</html>
